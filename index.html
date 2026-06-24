@@ -2229,70 +2229,65 @@ a.pbadge:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.45)
 
 <!-- OFFER (Creator -50% promo) -->
 <style>
-#offer{position:relative;overflow:hidden;background:#0f0f0f;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-#offer .oglow{position:absolute;top:-160px;left:50%;transform:translateX(-50%);width:980px;height:560px;background:radial-gradient(closest-side,rgba(255,255,90,.10),transparent 72%);pointer-events:none}
-#offer .wrap{position:relative}
-.of-badge{display:inline-flex;align-items:center;gap:8px;background:var(--yellow);color:#0c0c0c;font-family:var(--head);font-weight:800;font-size:13px;letter-spacing:.3px;padding:9px 16px;border-radius:150px;margin-bottom:22px}
-.of-grid{display:grid;grid-template-columns:1.45fr .9fr;gap:34px;align-items:stretch}
-.of-l h2{margin-bottom:14px}
-.of-incl{color:var(--tx2);font-size:17px;line-height:1.45;margin:0 0 20px}
-.of-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:13px}
-.of-list li{display:flex;gap:12px;align-items:center;color:#fff;font-size:16.5px;line-height:1.3}
-.of-list li i{color:var(--yellow);font-size:22px;flex:none}
-.of-card{background:var(--yellow);border-radius:24px;padding:30px 28px;display:flex;flex-direction:column;justify-content:center}
+#offer{position:relative;background:var(--bg)}
+.of-block{position:relative;overflow:hidden;background:var(--yellow);border-radius:32px;padding:44px 50px}
+.of-block .oglow{position:absolute;top:-45%;right:-8%;width:600px;height:600px;background:radial-gradient(closest-side,rgba(255,255,255,.55),transparent 70%);pointer-events:none}
+.of-grid{position:relative;display:grid;grid-template-columns:1.5fr .82fr;gap:28px 46px;align-items:center}
+.of-badge{display:inline-flex;align-items:center;gap:8px;background:#0c0c0c;color:#fff;font-family:var(--head);font-weight:800;font-size:12.5px;letter-spacing:.3px;padding:8px 15px;border-radius:150px;margin-bottom:16px}
+.of-badge i{color:var(--yellow);font-size:16px}
+.of-l h2{color:#0c0c0c;margin-bottom:14px}
+.of-incl{font-family:var(--head);font-weight:600;color:#1c1c1c;font-size:clamp(15px,1.5vw,18.5px);line-height:1.32;margin:0 0 22px;max-width:580px}
+.of-card{display:flex;flex-direction:column;align-items:flex-start}
 .of-price{font-family:var(--head);font-weight:800;color:#0c0c0c;font-size:clamp(42px,5vw,58px);line-height:.9;display:flex;align-items:flex-end;gap:10px}
 .of-price small{font-family:var(--body);font-weight:400;font-size:16px;opacity:.72;padding-bottom:9px}
 .of-old{color:#0c0c0c;opacity:.5;text-decoration:line-through;font-size:19px;margin-top:12px}
 .of-when{color:#0c0c0c;opacity:.82;font-size:14px;margin-top:3px}
-.of-cta{margin-top:22px;width:100%;background:#0c0c0c;color:#fff}
-.of-cta:hover{background:#000;box-shadow:0 12px 36px rgba(0,0,0,.35)}
+.of-cta{margin-top:20px;width:100%;background:#0c0c0c;color:#fff}
+.of-cta:hover{background:#000;box-shadow:0 14px 38px rgba(0,0,0,.28)}
 .of-arr{display:inline-flex;width:30px;height:30px;border-radius:50%;background:var(--yellow);color:#0c0c0c;align-items:center;justify-content:center;font-size:17px;margin-left:2px}
-.of-timer{display:flex;align-items:center;justify-content:center;gap:7px;color:#0c0c0c;opacity:.72;font-size:13px;margin-top:13px}
-.of-div{height:1px;background:var(--line);margin:44px 0 34px}
-.of-bonus h3{font-size:clamp(22px,2.4vw,30px);line-height:1.1;margin:0 0 12px}
-.of-bonus .sub{margin:0 0 24px;max-width:780px}
-.of-deliv{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:15px 28px}
-.of-deliv li{display:flex;gap:11px;align-items:center;color:#fff;font-size:15.5px;line-height:1.3}
-.of-deliv li i{color:var(--yellow);font-size:20px;flex:none}
-@media(max-width:760px){.of-grid{grid-template-columns:1fr}.of-deliv{grid-template-columns:1fr}.of-card{order:-1}}
+.of-timer{align-self:center;display:flex;align-items:center;gap:7px;color:#0c0c0c;opacity:.72;font-size:13px;margin-top:13px}
+.of-gift{background:rgba(12,12,12,.06);border:1px solid rgba(12,12,12,.12);border-radius:18px;padding:17px 20px}
+.of-gift-top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:13px}
+.of-gift-tag{display:inline-flex;align-items:center;gap:7px;background:#0c0c0c;color:var(--yellow);font-family:var(--head);font-weight:800;font-size:11.5px;letter-spacing:.4px;text-transform:uppercase;padding:6px 12px;border-radius:100px;flex:none}
+.of-gift-tag i{font-size:14px}
+.of-gift-top b{font-family:var(--head);font-weight:600;color:#0c0c0c;font-size:clamp(14px,1.35vw,17px);line-height:1.2}
+.of-chips{display:flex;flex-wrap:wrap;gap:8px}
+.of-chips span{font-size:13px;color:#161616;background:rgba(255,255,255,.5);border:1px solid rgba(12,12,12,.13);border-radius:100px;padding:6px 13px;line-height:1.15}
+@media(max-width:880px){.of-grid{grid-template-columns:1fr;align-items:stretch}.of-card{order:-1}.of-incl{max-width:none}.of-timer{align-self:flex-start}}
+@media(max-width:760px){.of-block{padding:30px 22px}}
 </style>
 <section id="offer">
-  <div class="oglow"></div>
   <div class="wrap rv">
-    <div class="of-badge"><i class="ti ti-discount-2"></i>Акция до 31 июля</div>
-    <div class="of-grid">
-      <div class="of-l">
-        <h2>&minus;50% на тариф Creator</h2>
-        <p class="of-incl">Включает Virale, ИИ-менеджер и все инструменты ChatPlace:</p>
-        <ul class="of-list">
-          <li><i class="ti ti-circle-check"></i>Генерация видео и постов</li>
-          <li><i class="ti ti-circle-check"></i>Поиск трендов и анализ контента</li>
-          <li><i class="ti ti-circle-check"></i>ИИ-менеджер в DM и комментариях</li>
-          <li><i class="ti ti-circle-check"></i>Чат-боты и геймификации</li>
-          <li><i class="ti ti-circle-check"></i>Рассылки</li>
-        </ul>
+    <div class="of-block">
+      <div class="oglow"></div>
+      <div class="of-grid">
+        <div class="of-l">
+          <div class="of-badge"><i class="ti ti-discount-2"></i>Акция до 31 июля</div>
+          <h2>&minus;50% на тариф Creator</h2>
+          <p class="of-incl">Включает Virale, ИИ-менеджер и все инструменты ChatPlace: привлекать подписчиков, повышать вовлечённость и продавать.</p>
+          <div class="of-gift">
+            <div class="of-gift-top">
+              <span class="of-gift-tag"><i class="ti ti-gift"></i>В подарок</span>
+              <b>Мини-курс «10 уроков: ИИ-контент для продвижения»</b>
+            </div>
+            <div class="of-chips">
+              <span>30 идей для ниши</span>
+              <span>10-15 хуков для Reels</span>
+              <span>3-5 сценариев</span>
+              <span>5-7 готовых AI-видео</span>
+              <span>2-3 креатива</span>
+              <span>Контент-план на 30 дней</span>
+            </div>
+          </div>
+        </div>
+        <div class="of-card">
+          <div class="of-price">2&nbsp;250&nbsp;&#8381;<small>/ мес</small></div>
+          <div class="of-old">4&nbsp;500&nbsp;&#8381;</div>
+          <div class="of-when">при оплате за год</div>
+          <button class="btn of-cta" data-cta>Подключить Creator<span class="of-arr"><i class="ti ti-arrow-right"></i></span></button>
+          <div class="of-timer"><i class="ti ti-clock"></i><span id="ofCd">до 31 июля</span></div>
+        </div>
       </div>
-      <div class="of-card">
-        <div class="of-price">2&nbsp;250&nbsp;&#8381;<small>/ мес</small></div>
-        <div class="of-old">4&nbsp;500&nbsp;&#8381;</div>
-        <div class="of-when">при оплате за год</div>
-        <button class="btn of-cta" data-cta>Подключить Creator<span class="of-arr"><i class="ti ti-arrow-right"></i></span></button>
-        <div class="of-timer"><i class="ti ti-clock"></i><span id="ofCd">до 31 июля</span></div>
-      </div>
-    </div>
-    <div class="of-div"></div>
-    <div class="of-bonus">
-      <div class="kick"><svg class="sp"><use href="#sp4"/></svg>Бонус<span class="nw">курс</span></div>
-      <h3>10 уроков: ИИ-контент для продвижения</h3>
-      <p class="sub">Как получать идеи, контент-план, сценарии и готовые к публикации видео без съёмок, монтажа и сложных промптов.</p>
-      <ul class="of-deliv">
-        <li><i class="ti ti-circle-check"></i>30 идей для вашей ниши</li>
-        <li><i class="ti ti-circle-check"></i>10&ndash;15 хуков для Reels и постов</li>
-        <li><i class="ti ti-circle-check"></i>3&ndash;5 сценариев для роликов</li>
-        <li><i class="ti ti-circle-check"></i>5&ndash;7 готовых AI-видео</li>
-        <li><i class="ti ti-circle-check"></i>2&ndash;3 рекламных креатива</li>
-        <li><i class="ti ti-circle-check"></i>Контент-план на 30 дней</li>
-      </ul>
     </div>
   </div>
 </section>
